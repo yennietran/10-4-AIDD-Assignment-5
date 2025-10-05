@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FCRE</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+        Yen's Personal Webpage
+        </h1>
+        <h3>Contact Me</h3>
+      </header>
+
+      <nav class="row navbar navbar-default">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#mynav"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mynav">
+          <ul class="nav navbar-nav">
+            <li><a class="nav_link" href="index.html">Home</a></li>
+            <li><a class="nav_link" href="about.html">About Me</a></li>
+            <li><a class="nav_link" href="resume.html">Resume</a></li>
+            <li><a class="nav_link" href="projects.html">Projects</a></li>
+            <li>
+              <a class="nav_link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<main class="col">
+  <!-- Left: Original Contact Form (UNTOUCHED) -->
+  <div class="col-sm-12 col-md-6">
+    <h3>Contact Form</h3>
+    <form action="thankyou.html" method="get">
+      <div>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+        <span class="error-message" style="color: red;"></span>
+      </div>
+      <div>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+        <span class="error-message" style="color: red;"></span>
+      </div>
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+        <span class="error-message" style="color: red;"></span>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8">
+        <span class="error-message" style="color: red;"></span>
+      </div>
+      <div>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <span class="error-message" style="color: red;"></span>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Right: Contact Information -->
+  <div class="col-sm-12 col-md-6">
+    <div class="contact-panel">
+      <h3>Contact Information</h3>
+      <p><strong>Email:</strong> <a href="mailto:yentran@iu.edu">yentran@iu.edu</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/tranyennie" target="_blank">https://www.linkedin.com/in/tranyennie/</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/yennietran" target="_blank">https://github.com/yennietran</a></p>
+      <hr>
+      <p>I’m open to new projects, collaborations, and opportunities — feel free to reach out!</p>
+    </div>
+  </div>
+</main>
+
+    </div>
+      <footer>
+        <p>
+          Yen's Personal Webpage | Kelley School of Business, Indiana University | &copy; 2025
+        </p>
+      </footer>
+  </body>
+</html>
